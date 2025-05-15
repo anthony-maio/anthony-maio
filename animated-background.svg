@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#232b38" />
+      <stop offset="100%" stop-color="#3f4251" />
+    </linearGradient>
+    
+    <!-- Filters for glow effects -->
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Animated blobs -->
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#45b9a4" stop-opacity="0.2">
+        <animate attributeName="stop-opacity" values="0.2;0.3;0.2" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#45b9a4" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;0.1;0" dur="10s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+    
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#9580ff" stop-opacity="0.15">
+        <animate attributeName="stop-opacity" values="0.15;0.25;0.15" dur="15s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#9580ff" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;0.05;0" dur="15s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+    
+    <radialGradient id="blob3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#d95f98" stop-opacity="0.1">
+        <animate attributeName="stop-opacity" values="0.1;0.2;0.1" dur="20s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#d95f98" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;0.05;0" dur="20s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+    
+    <radialGradient id="blob4" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#356859" stop-opacity="0.15">
+        <animate attributeName="stop-opacity" values="0.15;0.25;0.15" dur="18s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#356859" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;0.08;0" dur="18s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#gradient1)" />
+  
+  <!-- Animated blobs -->
+  <circle cx="300" cy="200" r="250" fill="url(#blob1)" opacity="0.7">
+    <animate attributeName="cx" values="300;350;300;250;300" dur="30s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="200;250;300;250;200" dur="25s" repeatCount="indefinite" />
+    <animate attributeName="r" values="250;300;250;200;250" dur="20s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="700" cy="300" r="300" fill="url(#blob2)" opacity="0.6">
+    <animate attributeName="cx" values="700;750;800;750;700;650;600;650;700" dur="40s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="300;350;300;250;200;250;300;350;300" dur="35s" repeatCount="indefinite" />
+    <animate attributeName="r" values="300;350;300;250;300;350;300" dur="30s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="900" cy="150" r="200" fill="url(#blob3)" opacity="0.5">
+    <animate attributeName="cx" values="900;950;900;850;900" dur="35s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="150;200;250;200;150" dur="30s" repeatCount="indefinite" />
+    <animate attributeName="r" values="200;250;200;150;200" dur="25s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="500" cy="350" r="220" fill="url(#blob4)" opacity="0.55">
+    <animate attributeName="cx" values="500;550;600;550;500;450;400;450;500" dur="38s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="350;300;250;300;350;400;350;300;350" dur="32s" repeatCount="indefinite" />
+    <animate attributeName="r" values="220;270;220;180;220;270;220" dur="28s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Subtle grid lines -->
+  <path d="M0 100 H1200" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+  <path d="M0 200 H1200" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+  <path d="M0 300 H1200" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+  
+  <path d="M300 0 V400" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+  <path d="M600 0 V400" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+  <path d="M900 0 V400" stroke="#e2f0fd" stroke-width="0.2" stroke-opacity="0.05" />
+</svg>

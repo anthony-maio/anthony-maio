@@ -1,86 +1,67 @@
-# Hello, I'm Anthony Maio.
+ # Anthony Maio                                                                                                     
+  Independent AI safety researcher. Former Staff Software Engineer (20 years shipping enterprise systems). Took a 
+  sabbatical to work on problems I think matter more.                                                             
+  
+  **Focus areas:** scalable oversight, agentic system evaluation, audit-shielding detection, inter-agent
+  coordination security.
 
-I have been a Staff Software Engineer shipping enterprise production code for 20 years. I have taken a career sabbatical to pivot fully into an independent AI safety researcher focused on **agentic systems**, **scalable oversight**, and **token-efficient inter-agent communication** because I believe this work is more important and valuable.
+  - **Website:** https://making-minds.ai
+  - **Research:** https://making-minds.ai/research
+  - **Email:** anthony@making-minds.ai
+  - **ORCID:** https://orcid.org/0009-0003-4541-8515
+  - **Google Scholar:** https://scholar.google.com/citations?user=N_jxNc8AAAAJ
+  - **ResearchGate:** https://www.researchgate.net/profile/Anthony-Maio
+  - **Hugging Face:** https://huggingface.co/anthonym21
+  - **LinkedIn:** https://linkedin.com/in/anthony-maio
 
-- **Website:** https://making-minds.ai
-- **Research index (papers + PDFs):** https://making-minds.ai/research/  
-- **Tools index:** https://making-minds.ai/tools/  
-- **CV (PDF):** https://making-minds.ai/cv.pdf  
-- **Email:** anthony@making-minds.ai  
-- **LinkedIn:** https://www.linkedin.com/in/anthony-maio  
-- **ORCID:** https://orcid.org/0009-0003-4541-8515  
-- **Hugging Face:** https://huggingface.co/anthonym21  
+  ---
 
----
+  ## Research
 
-## Research themes
+  ### Scalable oversight & verification failure
+  How weak verifiers (humans, smaller models) fail to catch persuasive but wrong reasoning. The CMED benchmark +  
+  HDCS swarm architecture.
 
-- **Scalable oversight & weak-verifier failure modes**  
-  Measuring when “weaker” evaluators (including humans + smaller models) fail to detect persuasive but incorrect reasoning.
+  - [From Verification Failure to Swarm Solution](https://zenodo.org/records/18234621) — CMED + HDCS combined     
+  - [cmed-toolkit](https://github.com/anthony-maio/cmed-toolkit) — evaluation harness
 
-- **Evaluation-awareness / audit-shielding in agentic workflows**  
-  How systems behave differently under “benchmark-shaped” prompts vs. realistic, high-trust production contexts.
+  ### Agentic safety & audit-shielding
+  How systems behave differently under benchmark-shaped prompts vs. realistic high-trust contexts. Model organisms
+   of misalignment.
 
-- **Coherence-seeking & long-horizon agents**  
-  Architectures for continuity, intervention, and monitoring “epistemic stress” in long-lived systems.
+  - [Model Organisms of Supply-Chain Co-option](https://zenodo.org/records/18203353) — LotL failure modes in      
+  RAG-augmented runtimes
+  - [Scaffolded Introspection](https://zenodo.org/records/18474841) — eliciting self-referential behavior in LLMs 
+  - [argos-swarm](https://github.com/anthony-maio/argos-swarm) — EAP + HDCS defensive evaluation
 
-- **Inter-agent communication efficiency**  
-  Protocol design that targets **tokenization economics** rather than character-count compression.
+  ### Cognitive architecture & continuity
+  Long-horizon agent coherence, memory systems, epistemic stress detection.
 
----
+  - [The Continuity Core](https://zenodo.org/records/18437008) — unified architecture for self-modifying AI       
+  - [Coherence-Seeking Architectures](https://zenodo.org/records/18137928) — MRA + C2 + CPR framework
+  - [Synthesis](https://zenodo.org/records/18452336) — safe capability self-extension via TDD + graduated trust   
 
-## Papers & preprints (PDF)
+  ### Inter-agent communication
+  Protocol design targeting tokenization economics. Efficiency + detectability for coordination channels.
 
-- **Cross-Model Epistemic Divergence (CMED): Empirical Evidence for Scalable Oversight Failures**  
-  https://making-minds.com/papers/cmed_paper.pdf
+  - [Slipstream](https://zenodo.org/records/18115418) — 82% token reduction via semantic quantization
+  - [slipcore](https://github.com/anthony-maio/slipcore) — reference implementation
+  - [HF blog post](https://huggingface.co/blog/anthonym21/slipstream-for-agent-communication)
 
-- **Coherence-Seeking Architectures for Agentic AI**  
-  https://making-minds.com/papers/Coherence-Seeking-Architectures-for-Agentic-AI-Anthony-Maio-v2.pdf
+  ---
 
-- **Heterogeneous Divergence-Convergence Swarm (HDCS)**  
-  https://making-minds.com/papers/hdcs_paper.pdf
+  ## Current work
 
-- **Synthesis: Test-Driven AI Self-Extension**  
-  https://making-minds.com/papers/synthesis_paper.pdf
+  - Red-team → blue-team pipelines for agentic deployments (prompt evolution + heterogeneous verification)        
+  - Protocol security for semantic quantization channels
+  - Reproducible oversight failure evaluations (CMED-style trap suites)
+  - [EAP contribution to Bloom](https://github.com/safety-research/bloom/pull/37)
 
-- **Emergent Multi-Model Coordination Patterns (Manifold paper)**  
-  https://making-minds.com/papers/manifold_paper.pdf
+  ---
 
-- **Slipstream: Semantic Quantization for Efficient Multi-Agent Coordination**  
-  https://making-minds.com/papers/slipstream-paper.pdf
+  ## Contact
 
-(Full index + descriptions: https://making-minds.com/research/)
+  Building agentic systems and want help with evaluation harnesses, oversight swarms, or agent communication      
+  protocols? I'm currently looking for a full-time role where I can bring my 20 years of shipping production code to innovative AI use cases or research.
 
----
-
-## Open-source & artifacts
-
-### Slipstream / SLIPCore (semantic quantization for agent coordination)
-- **Repo:** https://github.com/anthony-maio/slipcore  
-- **Hugging Face article:** https://huggingface.co/blog/anthonym21/slipstream-for-agent-communication  
-- **Zenodo (paper DOI):** https://doi.org/10.5281/zenodo.18063451  
-- **Dataset:** https://huggingface.co/datasets/anthonym21/slipstream-tqt  
-- **Model:** https://huggingface.co/anthonym21/slipstream-glm-z1-9b  
-
-### Evolutionary Adversarial Pipeline (EAP) for Bloom
-Work-in-progress contribution to Bloom to evolve prompts away from benchmark artifacts and probe evaluation-awareness:
-- **PR:** https://github.com/safety-research/bloom/pull/37  
-
----
-
-## What I’m working on now
-
-- **Red-team → blue-team pipelines** for agentic deployments (prompt evolution + heterogeneous verification).
-- **Protocol + security work** around semantic quantization / coordination channels (efficiency *and* detectability).
-- **Reproducible evaluations** for oversight failures (CMED-style trap suites + automation).
-
----
-
-## Collaboration / hiring
-
-If you’re building agentic systems and want help with:
-- evaluation harnesses for **deceptive / persuasive error** detection,
-- multi-model **oversight swarms**,
-- or production-grade **agent communication protocols**,
-
-reach out: **anthony@making-minds.ai**
+  **anthony@making-minds.ai**
